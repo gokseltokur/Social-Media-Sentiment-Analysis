@@ -1,5 +1,6 @@
 data/
 glove/
+models/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
