@@ -67,8 +67,7 @@ label attribute. We applied these analyses on them.
 We explored the tweets by looking at the letters and words in them. First of
 all, we counted the letters of all tweets and calculated the letter frequencies. Then
 we compared the letter frequency of our data with the expected frequency of the
-letters of the alphabet of English. In Figure 1, this comparison is shown. As seen in
-the graph, even though there are some exceptions, for most of the letter, the
+letters of the alphabet of English. Even though there are some exceptions, for most of the letter, the
 frequencies of our data is really close to the expected ones.
 The number of characters and words are also counted and analysed.
 Minimum number of characters of all tweets is 1 whereas the maximum number is
@@ -83,10 +82,9 @@ and number of words graphs are skewed graphs.
 After counting the number of words used in tweets, word usages are
 analysed. Since the stop words are usually the most used words in texts and they
 may prevent us from getting the right results, they are calculated by filtering the
-stopwords. The results are shown in Figure 8. Also, most common words for positive
-and negative labels are separated and shown in Figures 9, 10, 11 and 12.
-Then, as mentioned in Part 2, by using some feature extraction methods, a
-scatter plot is obtained. The plot shows the correlation between the
+stopwords. Also, most common words for positive
+and negative labels are separated.
+Then, a scatter plot is obtained by using some feature extraction methods. The plot shows the correlation between the
 words.
 
 # Predictive Analysis
