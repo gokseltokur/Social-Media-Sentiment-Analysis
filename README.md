@@ -10,7 +10,7 @@ The dataset contains 1,600,000 tweets extracted using the twitter api. The tweet
 * text: The text of the tweet
 
 We remove tweets that have a length of 0. After this process, the dataset has a dimension of 1592328×2
-Positive and negative samples are equal. The dataset distribution has not any skewness as shown in Figure 4.
+Positive and negative samples are equal. The dataset distribution has not any skewness as shown below.
 ![datadist](imgs/1.png)
 
 
@@ -26,5 +26,25 @@ We got the p-value (p) as 0 which implies that the letter frequency does not fol
 | expected   |    0.967421    |   1.0     |
 
 
-We counted the number of characters for each tweet and analyzed the data frame according to maximum number of characters, minimum number of characters, mean of the number of characters column and its standard deviation. Our longest tweet is 189 characters long, the shortest tweet is 1 character long and mean of all tweets’ character length 42.78. The standard deviation of all tweet character length is 24.16 as shown in below.
+We counted the number of characters for each tweet and analyzed the data frame according to maximum number of characters, minimum number of characters, mean of the number of characters column and its standard deviation. Our longest tweet is 189 characters long, the shortest tweet is 1 character long and mean of all tweets’ character length 42.78. The standard deviation of all tweet character length is 24.16.
 
+## Number of Characters
+We counted the number of words for each tweet and analyzed the data frame according to maximum number of words, minimum number of words, mean of the number of words column and its standard deviation. Our longest tweet is 50 words long, the shortest tweet is 1 word long and the mean of all tweets’ word length is 7.24. The standard deviation of all tweet character length is 4.03.
+
+### Most Common Words in Dataset
+![a](imgs/3.png)
+
+## Positive Tweets
+### Most Common Words in Positive Tweets
+![a](imgs/4.png)
+![a](imgs/5.png)
+
+## Negative Tweets
+### Most Common Words in Negative Tweets
+![a](imgs/6.png)
+![a](imgs/7.png)
+
+## GloVe: Global Vectors for Word Representation
+We can train the embedding ourselves. However, that approach can take a long time to train. So, we use transfer learning technique, and we use GloVe: Global Vectors for Word Representation.
+  The Global Vectors for Word Representation, or GloVe, algorithm is an extension to the word2vec method for efficiently learning word vectors, developed by Pennington, et al. at Stanford. It is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space. 
+  We download the GloVe. Then, we initialize an embedding index that has 400000 word vectors, and embedding matrix.
