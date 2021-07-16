@@ -2,12 +2,12 @@
 
 ## Dataset
 The dataset contains 1,600,000 tweets extracted using the twitter api. The tweets have been classified from 0 (negative) to 4 (positive). The dataset contains 6 fields which are target as integer, ids as integer, date as date, flag as string, user as string and text as string.These 6 fields are shown below.
-● target: The polarity of the tweet (0 - negative, 2 - neutral, 4 - positive)
-● ids: The id of the tweet.
-● date: The date of the tweet.
-● flag: The query. If there is no query, then this value is NO_QUERY.
-● user: The user that tweeted.
-● text: The text of the tweet
+* target: The polarity of the tweet (0 - negative, 2 - neutral, 4 - positive)
+* ids: The id of the tweet.
+* date: The date of the tweet.
+* flag: The query. If there is no query, then this value is NO_QUERY.
+* user: The user that tweeted.
+* text: The text of the tweet
 
 We remove tweets that have a length of 0. After this process, the dataset has a dimension of 1592328×2
 Positive and negative samples are equal. The dataset distribution has not any skewness as shown in Figure 4.
